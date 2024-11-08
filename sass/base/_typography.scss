@@ -1,18 +1,19 @@
-@use '../abstracts/variables' as v;
+.icon_color{
+    color: #000000;
+    padding-top: 100px;
+  }
+  
+  .fa-2xl{
+    font-size: 50px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  
+  .p_desc{
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 200;
+  }
 
-body {
-    font-family: v.$body-font-family;
-}
-
-h2 {
-    font-family: v.$heading-font-family;
-    font-size: 28px;
-    color: v.$accent-color;
-    margin-bottom: 20px;
-
-}
-
-p{
-    line-height: 24px;
-    margin-bottom: 20px;
-}
+  span{
+    color: #07bded;
+  }
