@@ -60,7 +60,7 @@ function ControlContent(buttonId, annotationId) {
   if (!annotation.classList.contains('none')) {
 
     console.log('asas')
-    gsap.fromTo(annotation, { opacity: 0, x: 60 }, { opacity: 1, x: -80, duration: 0.5 });
+    gsap.fromTo(annotation, { opacity: 0, x: 60 }, { opacity: 1, x: 100, duration: 0.5 });
     
   }
 }

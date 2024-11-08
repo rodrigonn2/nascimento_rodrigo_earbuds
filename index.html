@@ -1,6 +1,8 @@
+
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>&lt;model-viewer&gt; template</title>
+    <title>EARBUDS 1</title>
     <meta charset="utf-8">
     <meta name="description" content="&lt;model-viewer&gt; template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,9 +15,13 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">  
 </head>
   <body>
-    <model-viewer src="./glft/nascimento_rodrigo_earbuds.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="./images/poster.webp" shadow-intensity="1">
-  
-      <button class="Hotspot" id="volume" slot="hotspot-2" data-position="3.4623631304472853m 9.225418534425355m 2.738581730261569m" data-normal="-0.6706380826094394m -0.05737292746953455m 0.7395626473447062m" data-visibility-attribute="visible">
+    <div>
+      <h2 class="hidden">Earbuds delivery 1</h2>
+    </div>
+
+ <model-viewer src="./glft/nascimento_rodrigo_earbuds.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="./images/poster.webp" shadow-intensity="1">
+
+  <button class="Hotspot" id="volume" slot="hotspot-2" data-position="3.4623631304472853m 9.225418534425355m 2.738581730261569m" data-normal="-0.6706380826094394m -0.05737292746953455m 0.7395626473447062m" data-visibility-attribute="visible"></button>
         <section class="HotspotAnnotation none"  id="volume_hot">
           <div><i class="fa-solid fa-music fa-2xl"></i></div>
           <div>
@@ -23,7 +29,7 @@
             <p class="p_desc">With just a gesture, you control the volume, the music you're listening to, and even answer calls. Our revolutionary control circle offers greater ease of use</p>
             </div>
           </section>
-      </button>
+          
       
       <button class="Hotspot" id="clean_sound_btn" slot="hotspot-3" data-position="4.877286919527222m 9.928156667805544m 3.5327974079670286m" data-normal="-0.11232707461014362m 0.5735320580903392m 0.8114453811885229m" data-visibility-attribute="visible">
         <section class="HotspotAnnotation none"  id="clean_sound_hot">
@@ -37,7 +43,7 @@
       
       <button class="Hotspot" id="noise_c_btn" slot="hotspot-4" data-position="5.517801927627754m 8.939865418819581m 3.4520970027136273m" data-normal="0.4850408323912414m -0.5838824696135211m 0.6510120218484658m" data-visibility-attribute="visible">  
         <section class="HotspotAnnotation none" id="noise_canc_hot">
-          <div><i class="fab fa-facebook fa-3x"></i></div>
+          <div><i class="fa-solid fa-bell-slash fa-2xl"></i></div>
           <div>
             <h2 class="h2_title">The <span>Noise Cancelation</span></h2>
             <p class="p_desc">Enjoy your music space without external noise with our exclusive noise-cancelling technology.</p>
@@ -78,7 +84,7 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="./js/main.js"></script>
   
   </body>
 </html>
