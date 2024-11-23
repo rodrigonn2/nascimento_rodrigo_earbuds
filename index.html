@@ -1,91 +1,184 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>EARBUDS 1</title>
-    <meta charset="utf-8">
-    <meta name="description" content="&lt;model-viewer&gt; template">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link type="text/css" href="./css/main.css" rel="stylesheet"/>
-    <link type="text/css" href="./css/grid.css" rel="stylesheet"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/983615787b.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <title>Space Sound</title>
 </head>
-  <body>
-    <div>
-      <h2 class="hidden">Earbuds delivery 1</h2>
+    <body>
+        <div id="sticky-nav-con">
+            <header class="grid-con" id="main-header">
+                <nav id="main-nav" class="container_menu_mob col-span-full m-col-start-4 m-col-end-12 l-col-start-6 l-col-end-12">
+                    <h2 class="hidden">Main Navigation</h2>
+                    <button id="button"></button>
+                    <div id="burger-con" >
+                        <ul>
+                            <li><a href="#exp">Home</a></li>
+                            <li><a href="#Colours">Colours</a></li>
+                            <li><a href="#caracteristics">Caracteristics</a></li>
+                            <li><a href="#Tech">Tech</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div id="logo" class="col-start-1 col-end-4 m-col-start-1 m-col-end-4 l-col-start-1 l-col-end-4">
+                    <a href="index.html"><img src="images/soundspace_logo.svg" alt="Sound_space" class="logo_position"></a>
+                </div>
+            </header>
+        </div>
+
+     <section class="grid-con box_hero">
+        <h2 class="hidden">Exploded View</h2>
+        <div class="col-span-full " id="exp">
+            <canvas id="explode-view"></canvas> 
+        </div>
+    </section>
+
+
+   
+    <section class="grid-con">
+        <h2 class="hidden">Products</h2>
+        <div class="col-start-1 col-end-5 m-col-start-1 m-col-end-13" id="Colours">
+            <p class="area_p">Colours</p>
+            <h2 class="title_s">Colours that match your style</h2>
+            <p class="normal_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        </div>
+    </section>
+    <section class="grid-con container_colours" id="buds-con">
+        <div class="col-start-1 col-end-3 m-col-start-1 m-col-end-5">
+            <img src="images/pink_woman.jpg" class="img_size" id="ear-person" alt="Person wearing colours">
+        </div>
+    <div class="col-start-3 col-end-5 m-col-start-5 m-col-end-10">
+            <img src="images/pink_bud.jpg" class="img_buds_size" id="ear-buds" alt="earbuds">
     </div>
-
- <model-viewer src="./glft/nascimento_rodrigo_earbuds.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="./images/poster.webp" shadow-intensity="1"> </button>
-
-  <button class="Hotspot" id="volume" slot="hotspot-2" data-position="3.4623631304472853m 9.225418534425355m 2.738581730261569m" data-normal="-0.6706380826094394m -0.05737292746953455m 0.7395626473447062m" data-visibility-attribute="visible">
-        <section class="HotspotAnnotation none"  id="volume_hot">
-          <div><i class="fa-solid fa-music fa-2xl"></i></div>
-          <div>
-          <h2 class="h2_title">The <span>Touch Control</span></h2>
-            <p class="p_desc">With just a gesture, you control the volume, the music you're listening to, and even answer calls. Our revolutionary control circle offers greater ease of use</p>
-            </div>
-          </section>
-        </button>
-          
-      
-      <button class="Hotspot" id="clean_sound_btn" slot="hotspot-3" data-position="4.877286919527222m 9.928156667805544m 3.5327974079670286m" data-normal="-0.11232707461014362m 0.5735320580903392m 0.8114453811885229m" data-visibility-attribute="visible">
-        <section class="HotspotAnnotation none"  id="clean_sound_hot">
-          <div><i class="fa-solid fa-music fa-2xl"></i></div>
-          <div>
-            <h2 class="h2_title">Clean <span>Surround Sound</span></h2>
-            <p class="p_desc">You've never experienced such pure sound. Whether live or studio, it feels like you're right there with your favorite artist.</p>
-          </div>
-        </section>
     
-      
-      <button class="Hotspot" id="noise_c_btn" slot="hotspot-4" data-position="5.517801927627754m 8.939865418819581m 3.4520970027136273m" data-normal="0.4850408323912414m -0.5838824696135211m 0.6510120218484658m" data-visibility-attribute="visible">  
-        <section class="HotspotAnnotation none" id="noise_canc_hot">
-          <div><i class="fa-solid fa-bell-slash fa-2xl"></i></div>
-          <div>
-            <h2 class="h2_title">The <span>Noise Cancelation</span></h2>
-            <p class="p_desc">Enjoy your music space without external noise with our exclusive noise-cancelling technology.</p>
-          </div>
-        </section>
-      </button>
-      
-      <button class="Hotspot" id="mic_next_btn" slot="hotspot-7" data-position="3.83891906692088m 9.181161152512468m 1.7596768870005421m" data-normal="0.07298976122143051m -0.03706214185106463m -0.9966438142075885m" data-visibility-attribute="visible">
-        <section class="HotspotAnnotation none"  id="mic_next_hot">
-            <div><i class="fa-solid fa-microphone fa-2xl"></i></div>
-            <div>
-              <h2 class="h2_title">Next generation <span>Microphone</span></h2>
-              <p class="p_desc">The best microphone for your calls. Your voice will be so crystal clear that it will bring you closer to people, even from afar.</p>
-            </div>
-        </section>
-      </button>
-      
-      <button class="Hotspot" id="design_exclusive_btn" slot="hotspot-8" data-position="3.2610988827951726m 7.182590552901962m 1.7739911135164763m" data-normal="0.27669919284582617m -0.043010086477599366m -0.9599935880721587m" data-visibility-attribute="visible">
-        <section class="HotspotAnnotation none"  id="design_hot">
-          <div><i class="fa-solid fa-crown fa-2xl"></i></div>
-          <div>
-            <h2 class="h2_title"><span>Design</span> King</h2>
-            <p class="p_desc">You've never seen a design like this. Not even that other headset has as much design (and technology) as ours.</p>
-          </div>
-      </section>
-      </button>
-      
-      <div class="progress-bar hide" slot="progress-bar">
-          <div class="update-bar"></div>
-      </div>
-      <button slot="ar-button" id="ar-button">
-          View in your space
-      </button>
-      <div id="ar-prompt">
-          <img src="./images/ar_hand_prompt.png">
-      </div>
-    </model-viewer>  
+        <div class="box_colours_picker col-start-1 col-end-5 m-col-start-10 m-col-end-11" id="color-con">
+            <h4 class="h4_colors">Colours</h4>
+            <button class="btn_colour" id="pink"></button>
+            <button class="btn_colour" id="black"></button>
+            <button class="btn_colour" id="purple"></button>
+        </div>
+    </section>
+
+   
+
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
-    <script src="./js/main.js"></script>
+    <section class="full-width-grid-con">
+    <div class="col-span-full commingsoon_box">
+        <h3 class="h3_comming">More colours comming soon</h3>
+    </div>
+    </section>
+
+
+
+
+    
+
+<!--MODELVIEWER-->
+    <section class="full-width-grid-con box_model_viewer">
+        
+        <div class="model_container col-span-full" id="caracteristics">
+            <p class="area_p_center">Caracteristics</p>
+        <h2 class="hidden">Model Viewer</h2>
+            <h2 class="h2_model">Tech that will blow your mind</h2>
+            <p class="normal_center_text">Space Sound prioritizes the sounds that matter most as you navigate your environment. With cutting-edge Noise Cancellation technology, you'll immerse yourself in crystal-clear music while blocking out distractions. Experience sound like never before — only with Space Sound.</p>
+        
+            <model-viewer class="model" src="glft/nascimento_rodrigo_earbuds.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="/images/poster.webp" shadow-intensity="0" disable-zoom>
+                <button class="Hotspot" slot="hotspot-1" data-position="3.4745151857519456m 9.285198491545408m 2.7531766389941974m" data-normal="-0.6665509929733934m -0.020213922592074385m 0.7451853266802997m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation" id="hotspot-1"></div>
+                </button>
+                <button class="Hotspot" slot="hotspot-2" data-position="5.299485870993696m 9.608248228584896m 3.6893685489820345m" data-normal="0.10651871655330981m 0.192895324485998m 0.9754205025604482m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation" id="hotspot-2"></div>
+                </button>
+                <button class="Hotspot" slot="hotspot-3" data-position="5.743576550886287m 8.960383287518326m 3.169825215059759m" data-normal="0.8664240295688613m -0.32288837775581986m 0.3808575803313777m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation" id="hotspot-3"></div>
+                </button>
+                <button class="Hotspot" slot="hotspot-4" data-position="3.627564631117198m 9.208041470614107m 1.7559536227047332m" data-normal="-0.04738533832937415m -0.021086222078145495m -0.9986540947444625m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation" id="hotspot-4"></div>
+                </button>
+                <button class="Hotspot" slot="hotspot-5" data-position="3.627564631117198m 9.208041470614107m 1.7559536227047332m" data-normal="-0.04738533832937415m -0.021086222078145495m -0.9986540947444625m" data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation" id="hotspot-5"></div>
+                </button>
+            </model-viewer>
+        
+        </div> 
+    </section>
+
+<!--ENDMODELVIEWER-->
+
+<!--MODELVIEWER MOBILE-->
+        
+    <section class="grid-con cara_mob">
+        <h2 class="hidden">Caracteristics Mobile</h2>
+        <div class="box_mc col-span-full" id="caracteristics">
+            <p class="area_p_center">Caracteristics</p>
+            <h2 class="h2_model">Tech that will blow your mind</h2>
+            <IMG src="/images/box_caracteristics.png" class="img_c" alt="caracteristics">
+        </div>
+        <div class="box_m col-span-full">
+            <img src="/images/touch.jpg" alt="touch control">
+            <p class="h2_cara">Touch Control</p>
+            <p class="mob_p_cara">Space Sound is revolutionizing the way you experience music. With intuitive gestures, you can easily control the volume and skip to your next song.</p>
+        </div>
+        <div class="box_m col-span-full">
+            <img src="/images/noise.jpg" alt="Noise Canceling">
+            <p class="h2_cara">Noise Canceling</p>
+            <p class="mob_p_cara">Need silence? Your callings with our powerful earphones will never be the same. And your songs will take you to space</p>
+        </div>
+        <div class="box_m col-span-full">
+            <img src="/images/surround.jpg" alt="Surround Sound">
+            <p class="h2_cara">Surround Sound</p>
+            <p class="mob_p_cara">Enjoy, the best audio quality of your life. Believe me, it will blow your mind.</p>
+        </div>
+
+        <div class="box_m col-span-full">
+            <img src="/images/MICROPHONE.jpg" alt="Next Generation Microphone">
+            <p class="h2_cara">Next Generation Microphone</p>
+            <p class="mob_p_cara">The best microphone for your calls. Your voice will be so crystal clear that it will bring you closer to people, even from afar.</p>
+        </div>
+
+
   
-  </body>
+    </section>
+
+<!--END MODELVIEWER MOBILE-->
+
+
+
+<section class="full-width-grid-con box_support">
+    <h2 class="hidden">Suppport text</h2>
+    <div class="box_sup_text col-start-1 col-end-3 m-col-start-1 m-col-end-5 l-col-start-1 l-col-end-4">
+        <h4 class="h4_support">Space Sound delivers cutting-edge technology with a splash of style. Inspired by the cosmos, choose from three stunning colours.</h4></div>
+</section>
+
+        <section class="grid-con ">
+            <h2 class="hidden">Colours</h2>
+
+
+            <div class=" box_service_x_ray col-start-1 col-end-4 m-col-start-1 m-col-end-9 l-col-start-1 l-col-end-9">
+                <div id="x-ray">
+                    <div id="divisor"></div>
+                </div>
+                <input type="range" min="0" max="100" value="50" id="slider">
+            </div>
+            <div class= "box_inside_x col-start-1 col-end-4 m-col-start-9 m-col-end-13 l-col-start-9 l-col-end-13" id="Tech"> <p class="area_p">Tech</p>
+                <h2 class="title_s">Inside our technology</h2>
+                <p class="normal_text">Dive into the technology behind Space Sound. Our X-ray view reveals the cutting-edge components and next-generation design that power an experience so seamless, it redefines innovation.</p></div>
+
+          
+        </section>
+
+
+     <footer class="full-width-grid-con">
+            <div class="box_footer col-start-1 col-end-5 m-col-start-1 m-col-end-13 l-col-start-1 l-col-end-13">
+                <p class="footer_p">Space Sound 2024</p>
+            </div>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <script src="js/main.js"></script>
+
+     </footer>
+    </body>
 </html>

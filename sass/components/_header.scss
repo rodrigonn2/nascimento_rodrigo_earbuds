@@ -1,0 +1,263 @@
+
+body, p, h2, h3, h4 {
+    margin: 0px; 
+    padding: 0px;
+    font-family: 'Nunito';
+ }
+
+html {
+    box-sizing: border-box; 
+    scroll-behavior: smooth;
+  }
+ 
+  .hidden {
+   display: none;
+ }
+
+ .img_size{
+    max-width: 100%;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit; 
+  }
+ 
+
+header{
+    background-color: #ffffff;
+   }
+
+
+.container_menu_mob {
+    background-color: #fff;
+    height: 20px;
+   
+  }
+  
+  
+  
+  #burger-con {
+    margin-top: 17px;
+    margin-bottom: 20px;
+    display: none;
+    z-index: 10000;
+    width: 100%; 
+    height: 100vh; 
+    background-color: #fff; 
+    left: 0; 
+  }
+  
+  #burger-con {
+      display: none;
+    }
+    
+  
+    #burger-con.slide-toggle {
+      display: block;
+    }
+  
+  #sticky-nav-con {
+    position: sticky;
+    top: 0px;
+    background-color: #fff;
+    border-bottom: solid 1px #c3c3c3;
+    z-index: 10000;
+    height: 84px;
+    overflow: visible; 
+  }
+  
+  
+  #main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  
+  
+  }
+  
+  
+  
+  #main-nav button {
+    width: 30px;
+    height: 30px;
+    background: url(../images/burger.svg) no-repeat;
+    margin-top: 27px;
+    margin-bottom: -28px;
+    transition: all .5s ease;
+    border: 0;
+    margin-left: 90%;
+  }
+  
+  #main-nav ul li a {
+    display: block;
+    padding: 32px 0 10px 0;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+    background-color: #fff;
+    transition: color 0.3s ease;
+  
+  
+  }
+  
+  #main-nav ul li a:hover {
+    color: #ffffff;
+  background-color: #2886c7;
+    padding: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  
+  #main-nav ul li {
+    border-bottom: none;
+  }
+  
+  #main-nav ul li:first-child {
+    border-top: 1px solid #efefef;
+  }
+  
+  #main-nav ul li:last-child {
+    margin-bottom: 10px;
+    height: max-content;
+  }
+  
+  
+  #logo {
+    max-width: 100px;
+    margin-bottom: 20px;
+    display: fixed;
+  
+  }
+  
+  
+  
+  
+  img {
+     max-width: 100%; 
+   }
+
+   @media screen and (min-width: 768px) {
+    #explode-view {
+        position: relative;
+        margin-top: 50px; /* Margem padrão para desktop */
+    }
+  
+    /*MENU FINAL*/
+  
+    #button {
+      display: none;
+   }
+  
+  .cara_mob{
+    display: none;
+  }
+  
+  #burger-con {
+    position: sticky; 
+    width: auto;
+    height: auto;
+    top: auto;
+    left: auto;
+     display: block;
+    font-size: 14px;
+    padding-left: 35%;
+    margin-left: -4%;
+    position: fixed;
+  
+  }
+  
+  #burger-con ul li, #burger-con ul li:first-child {
+    border: none;
+    display: inline;
+  
+  }
+  
+  #burger-con ul li {
+    margin-right: 10px;
+  }
+  
+  #burger-con ul li:last-child {
+    margin-right: 0px;
+  }
+  
+  #main-header {
+    height: 57px;
+  }
+  
+  #main-nav ul li a {
+    display: inline;
+    margin-right: 5px;
+    font-size: 14px;
+    margin-top: 20px;
+    z-index: 1000;
+    
+  }
+  
+  #main-nav {
+    padding-left: 30px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: -49px;
+    margin-left: -15%;
+  }
+  
+  #main-nav ul li a:hover {
+    background-color: #ffffff;
+    color: #2886c7;
+    border-bottom: 2px solid #2886c7;;
+    padding: 0px;
+    transition: color 0.3s ease;
+  }
+  
+  #logo {
+    margin-top: 22px;
+    order: -1;
+    width: 137%;
+  }
+  
+  #sticky-nav-con {
+    position: sticky;
+    top: 0px;
+    background-color: #fff;
+    border-bottom: solid 1px #c3c3c3;
+    z-index: 1000;
+    height: 73px;
+  }
+  
+
+   }
+
+   @media screen and (min-width: 1200px) {
+    #burger-con {
+        padding-left: 21%;
+     }
+    
+    #main-nav ul li a {
+    
+      font-size: 16px;
+    
+    }
+    
+    #logo {
+     
+      order: -1;
+    }
+    .logo_position{
+      margin-top: -13px;
+    }
+      
+      
+   }
+
+
+
+   
+
+
+
+
+
+
+
+   
+   
