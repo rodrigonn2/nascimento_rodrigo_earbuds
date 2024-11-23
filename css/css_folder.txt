@@ -1,1 +1,1 @@
-This folder will be used to store css files.
+This folder will be used to store CSS (Style sheet) files.
