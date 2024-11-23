@@ -17,6 +17,17 @@ No installation required
 3. Cinema 4d
 
 
+## image references
+https://www.pexels.com/photo/woman-lying-on-bed-holding-smartphone-3807535/
+https://www.pexels.com/photo/happy-black-businessman-having-video-call-on-stairs-4559677/
+https://www.pexels.com/photo/woman-enjoying-coffee-in-cozy-cafe-setting-29457510/
+https://www.pexels.com/photo/stylish-portrait-of-woman-in-neon-pink-hoodie-29391856/
+https://www.pexels.com/photo/photo-of-standing-woman-with-purple-braids-posing-beside-wall-with-her-hand-out-2563902/
+https://www.pexels.com/photo/person-s-hand-in-shallow-photo-1454797/
+
+
+
+
 ## History
 Novamber 2024
 
